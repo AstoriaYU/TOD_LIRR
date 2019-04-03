@@ -214,7 +214,7 @@ var layer2 = L.geoJSON(bufferGeoJson, {style: {
 });
 
 var legend = $('#legend');
-legend
+
 
 /*legend.onAdd = function (map) {
     var div = L.DomUtil.create('div', 'info legend'),
@@ -318,17 +318,3 @@ $( "#reset" ).click(() => {
   cleanup();
   resetSlide(slides[currentSlide]);
 });
-
-
-// $( "#btnToRemove" ).click(function() {
-//   if (currentSlide == 0) {
-//     layer = layer1;
-//   }
-//   else if (currentSlide == 1) {
-//     layer = layer2;
-//   }
-//   else if (currentSlide == 2) {
-//     layer = layer3;
-//   }
-//   map.removeLayer(layer);
-// });

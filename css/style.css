@@ -6,7 +6,7 @@ body {
 
 .p {
   font-size: 16px;
-  width: 235px;
+  width: 350px;
   font-family: "sans-serif";
   font-size: 15px;
   line-height: 25px;
@@ -14,8 +14,8 @@ body {
   word-wrap: break-word;
   margin-top: 15px;
   margin-bottom: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 5px;
+  margin-right: 0px;
 }
 
 .map {
@@ -107,7 +107,7 @@ button.red:active {box-shadow: 0 0 #ff4c4b; background-color: #ff4c4b;}
   font-weight: bold;
   font-size: 20px;
   line-height: 20px;
-  color: #d84500;
+  color: #ff4c4b;
   word-wrap: break-word;
   margin-bottom: 15px;
   margin-left: 15px;
@@ -120,7 +120,7 @@ button.red:active {box-shadow: 0 0 #ff4c4b; background-color: #ff4c4b;}
   font-family: "sans-serif";
   font-size: 18px;
   line-height: 20px;
-  color: gray;
+  color: #BA8CB5;
   word-wrap: break-word;
   margin-bottom: 15px;
   margin-left: 15px;
@@ -132,7 +132,7 @@ button.red:active {box-shadow: 0 0 #ff4c4b; background-color: #ff4c4b;}
   font-family: "sans-serif";
   font-size: 16px;
   line-height: 20px;
-  color: gray;
+  color: #70B4C4;
   word-wrap: break-word;
   margin-bottom: 15px;
   margin-left: 15px;
@@ -145,23 +145,23 @@ button.red:active {box-shadow: 0 0 #ff4c4b; background-color: #ff4c4b;}
   font-size: 22px;
   font-weight: bold;
   line-height: 28px;
-  color: #150b8c;
+  color: #428bca;
   word-wrap: break-word;
   margin-left: 15px;
   margin-right: 15px;
 }
 
 .textinfo {
-  width: 250px;
+  width: 350px;
   font-family: "sans-serif";
   font-style: italic;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 16px;
   color: #3b3b3b;
   word-wrap: break-word;
-  margin-bottom: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  margin-right: 0px;
 }
 
 .info {
@@ -176,14 +176,14 @@ button.red:active {box-shadow: 0 0 #ff4c4b; background-color: #ff4c4b;}
 .legend {
   background-color: #fff;
   font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  padding: 10px;
+  padding: 5px;
   position: absolute;
   right: 25px;
   z-index: 1;
 }
 
 .legend h4 {
-margin: 0 0 10px;
+margin: 0 0 5px;
 }
 
 .legend div span {
