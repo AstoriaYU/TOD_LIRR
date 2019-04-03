@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- CSS Imports -->
+  <title>LIRR TOD Opportunity</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css" integrity="sha256-YR4HrDE479EpYZgeTkQfgVJq08+277UXxMLbi/YP69o=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <div id="numberarea">
+          <label id="number-label1" for="numeric-input1">Min TOD Score: </label><input type="number" id="numeric-input1"><br><br>
+          <label id="number-label2" for="numeric-input2">Max TOD Score: </label><input type="number" id="numeric-input2"><br><br>
+        </div>
+    <br>
+    <div class="card" id="infoarea">
+      <div class="station-name" id="station">Station</div>
+      <div class="route-name" id="route">Route</div>
+      <div class="street-name" id="street">Street</div>
+      <div class="tod-score" id="tod">TOD Score</div>
+    </div>
+    <div class="chart" id="chartContainer" style="width: 98%; height: 380px"></div>
+
+  </div>
+  <div class = "button-area" id="buttonarea">
+    <br>
+    <br>
+    <button class= "blue" id="buffer">show buffer</button>
+    <button class = "purple" id="filter">filter</button>
+    <button class = "cyan" id="change">change layer</button>
+    <button class = "red" id="reset">reset</button>
+  </div>
+  <div id='menu'>
+    <input id='streets-v11' type='radio' name='rtoggle' value='streets' checked='checked'>
+    <label for='streets'>streets</label>
+    <input id='light-v10' type='radio' name='rtoggle' value='light'>
+    <label for='light'>light</label>
+    <input id='dark-v10' type='radio' name='rtoggle' value='dark'>
+    <label for='dark'>dark</label>
+    <input id='outdoors-v11' type='radio' name='rtoggle' value='outdoors'>
+    <label for='outdoors'>outdoors</label>
+    <input id='satellite-v9' type='radio' name='rtoggle' value='satellite'>
+    <label for='satellite'>satellite</label>
+</div>
+<!-- Legend -->
+  <div class= "legend" id="legend">
+<h4>TOD Score</h4>
+<div><span style='background-color: #581845'></span>20.83~100</div>
+<div><span style='background-color: #900C3F'></span>14.39~20.83</div>
+<div><span style='background-color: #C70039'></span>8.64~14.39</div>
+<div><span style='background-color: #FF5733'></span>0~8.64</div>
+</div>
+  <!-- Map -->
+  <div class= "map" id="map">
+
+</div>
+
+
+  <!-- Javascript Imports -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js" integrity="sha256-6BZRSENq3kxI4YYBDqJ23xg0r1GwTHEpvp3okdaIqBw=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore.js" integrity="sha256-O4179En8zabOlPYBNvGp8cF0uh0vnSZpW4Q6Ul1h+8c=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js" integrity="sha256-rjYnB0Bull7k2XkbJ03UNGqMuMieR769uQVGSSlsi6A=" crossorigin="anonymous"></script>
+  <script src="station.geojson"></script>
+  <script src="buffer.geojson"></script>
+  <script src="line.geojson"></script>
+  <script src="js/jquery.canvasjs.min.js"></script>
+  <script src="js/canvasjs.min.js"></script>
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+  <script src="js/leaflet-mapbox-gl.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
